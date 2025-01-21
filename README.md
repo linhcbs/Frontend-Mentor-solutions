@@ -1,3 +1,3 @@
 # My-Front-end-Dump
 
-lorem ipsum
+I hate coding UI
