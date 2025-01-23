@@ -1,0 +1,84 @@
+/* Import*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Variables */
+:root {
+    --card-container-bg-color: hsl(212, 45%, 89%);
+    --card-bg-color: white;
+    --header-text-color: hsl(218, 44%, 22%);
+    --normal-text-color: hsl(216, 15%, 48%);
+    --p-fontsize: 15px;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main */
+.outfit-bold {
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.outfit-normal {
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*  */
+@media screen and (max-width: 375px) {
+    .card {
+        width: 90%;
+    }
+}
+@media screen and (min-width: 376px) {
+    .card {
+        width: 275px;
+    }
+}
+
+.card-container {
+    background-color: var(--card-container-bg-color);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.card{
+    background-color: var(--card-bg-color);
+    height: fit-content;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+.card__text-section{
+    text-align: center;
+}
+
+.card__text-section__header{
+    color: var(--header-text-color);
+    margin: 10px;
+}
+
+.card__text-section__paragraph{
+    color: var(--normal-text-color);
+    font-size: 14px;
+    margin: 10px;
+}
+
+.card__qr-section__img {
+    width: 100%;
+    border-radius: 15px;
+}
