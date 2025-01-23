@@ -1,0 +1,150 @@
+/* Import*/
+@import url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  src: url("./assets/fonts/static/Inter-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 600;
+  src: url("./assets/fonts/static/Inter-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  src: url("./assets/fonts/static/Inter-Bold.ttf") format("truetype");
+}
+
+.inter-regular {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.inter-semibold {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.inter-bold {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Variables */
+:root {
+  --profile-card-location-color: hsl(75, 94%, 57%);
+  --profile-card-container-bg-color: hsl(0, 0%, 8%);
+  --profile-card-bg-color: hsl(0, 0%, 12%);
+  --profile-card-link-bg-color: hsl(0, 0%, 20%);
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main */
+
+/*  */
+
+@media screen and (max-width: 375px) {
+  .card {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 375px) {
+  .profile-card {
+    width: 375px;
+  }
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex-grow: 1;
+}
+
+.profile-card-container {
+  background-color: var(--profile-card-container-bg-color);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card {
+  background-color: var(--profile-card-bg-color);
+  margin: 20px;
+  padding: 37.5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-card__profile-picture {
+  border-radius: 50%;
+  width: 90px;
+  margin-bottom: 20px;
+}
+
+.profile-card__name {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.profile-card__location{
+    color: var(--profile-card-location-color);
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.profile-card__quote{
+    color: hsl(0deg 0% 63.53%);
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.profile-card__links {
+    font-size: 14px;
+    list-style-type: none;
+    width: 100%;
+}
+
+.profile-card__link{
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    background-color: var(--profile-card-link-bg-color);
+    display: block;
+    border-radius: 7.5px;
+    padding: 12.5px;
+    margin-bottom: 17.5px;
+    transition-duration: 0.1s;
+}
+
+.profile-card__link:hover{
+  background-color: hsla(75, 94%, 57%, 0.363);
+}
+
+.profile-card__link:active{
+  background-color: var(--profile-card-location-color);
+  color: black;
+}

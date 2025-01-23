@@ -5,6 +5,9 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ## Try it at
 [this solution's github pages](https://linhcbs.github.io/My-Front-end-Dump/qr-code-component-main/)
 
+## Try it at
+[this solution's github pages](https://linhcbs.github.io/My-Front-end-Dump/qr-code-component-main/)
+
 ## Overview
 
 ### Screenshot
