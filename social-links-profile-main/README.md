@@ -17,7 +17,7 @@ Users should be able to:
 
 ### Links
 
-- [Preview](https://linhcbs.github.io/My-Front-end-Dump/social-links-profile-main/)
+- [Preview](https://linhcbs.github.io/Frontend-Mentor-solutions/social-links-profile-main/)
 
 ## My process
 
