@@ -16,7 +16,7 @@ Users should be able to:
 
 ### Links
 
-[Preview](https://linhcbs.github.io/My-Front-end-Dump/blog-preview-card-main)
+[Preview](https://linhcbs.github.io/Frontend-Mentor-solutions/blog-preview-card-main)
 
 ## My process
 
