@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <article class="card">
+      <section class="card-result">
+        <h1 class="card-result-title">Your result</h1>
+        <div class="card-result-points">
+          <p class="card-result-mark">76</p>
+          <p class="card-result-fullmark">of 100</p>
+        </div>
+        <h2 class="card-result-grade">Great</h2>
+        <p class="card-result-comment">You scored higher than 65% of the people who have taken these tests.</p>
+
+      </section>
+      <section class="card-summary">
+        <h1>Summary</h1>
+        <ul class="card-summary__ol--skills">
+          <li class="card-summary__ol--skill skill-reaction">
+            <p>
+              <img src="./assets/images/icon-reaction.svg" alt="Reaction Icon">
+              Reaction
+            </p>
+            <p>
+              <span>80</span> / 100
+            </p>
+          </li>
+          <li class="card-summary__ol--skill skill-memory">
+            <p>
+              <img src="./assets/images/icon-memory.svg" alt="Memory Icon">
+              Memory
+            </p>
+            <p>
+              <span>92</span> / 100
+            </p>
+          </li>
+          <li class="card-summary__ol--skill skill-verbal">
+            <p>
+              <img src="./assets/images/icon-verbal.svg" alt="Verbal Icon">
+              Verbal
+            </p>
+            <p>
+              <span>61</span> / 100
+            </p>
+          </li>
+          <li class="card-summary__ol--skill skill-visual">
+            <p>
+              <img src="./assets/images/icon-visual.svg" alt="Visual Icon">
+              Visual
+            </p>
+            <p>
+              <span>72</span> / 100
+            </p>
+          </li>
+        </ul>
+        <button class="card-summary__btn--continue">Continue</button>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/linhcbs">linhcbs</a>.
+    </div>
+  </footer>
+</body>
+
+</html>
