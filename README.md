@@ -3,7 +3,7 @@ A place to store my responsive Frontend Mentor solutions
 
 My Frontend Mentor: [linhcbs](https://www.frontendmentor.io/profile/linhcbs)
 
-## Solutions Preview
+## Solutions Preview (Responsive)
 
 ### Difficulty: Newbie
 1. [QR code component](https://linhcbs.github.io/Frontend-Mentor-solutions/qr-code-component-main/)
