@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <article class="card outfit">
+      <div>
+        <img src="./images/image-equilibrium.jpg" alt="image-equilibrium" class="card__image" >
+        <div class="card__img-overlay">
+          <img src="./images/icon-view.svg" alt="view icon">
+        </div>
+      </div>
+      <h1 class="card__name">Equilibrium #3429</h1>
+      <p class="card__description">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+      <div class="card__status-section">
+        <p class="card__value">
+          <img src="./images/icon-ethereum.svg" alt="">
+          0.041 ETH
+        </p>
+        <p class="card__time">
+          <img src="./images/icon-clock.svg" alt="">
+          3 days left
+        </p>
+      </div>
+      <div class="card__author-section">
+        <img src="./images/image-avatar.png" alt="author avatar" class="card__pfp">
+        <p class="card__author-name">
+          <span>Creation of</span>
+          <span class="card__author">
+            Jules Wyvern
+          </span>
+        </p>
+      </div>
+    </article>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/linhcbs">linhcbs</a>.
+    </div>
+  </footer>
+
+  <script defer>
+    // Note: this won't work properly if you adjust the screen size using Developer Tool (try to refresh every time you adjust to a new size).
+    let img_overlay = document.querySelector(`.card__img-overlay`);
+    let img = document.querySelector(`.card__image`);
+    let len = img.offsetWidth + "px";
+
+    // Set the size of image-overlay the same as image
+    img_overlay.style.height = len;
+    img_overlay.style.width = len;
+
+    // Move image-overlay and image on top of each other
+    img_overlay.style["margin-top"] = -img.offsetWidth - 5 + "px";
+
+    
+
+  </script>
+</body>
+
+</html>

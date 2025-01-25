@@ -1,0 +1,140 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+/* 300, 400, 600 */
+.outfit {
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* Variables */
+:root {
+  /* Primary Colors */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  /* Neutral Colors */
+  --very-dark-blue-bg: hsl(217, 54%, 11%);
+  --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Typography */
+  --p-size: 18px;
+}
+
+/* Main */
+body {
+  background-color: var(--very-dark-blue-bg);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  margin: 20px;
+  color: white;
+}
+
+p {
+    font-size: var(--p-size);
+}
+
+.card{
+    color: var(--white);
+    background-color: var(--very-dark-blue-card-bg);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 340px;
+    margin: 15px;
+    box-shadow: 0px 25px 0px 15px rgba(0, 0, 0, 0.1),
+    0px 25px 0px 50px rgba(0, 0, 0, 0.06);
+}
+
+.card__image{
+    position: relative;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card__name{
+    font-weight: 600;
+}
+
+.card__description, .card__author-name span:first-child{
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+
+.card__status-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__status-section img{
+    position: relative;
+    bottom: -2px;
+    margin-right: 4px;
+}
+
+.card__value{
+    color: var(--cyan);
+    font-weight: 600;
+}
+
+.card__time{
+    color: var(--soft-blue);
+}
+
+.card__author-section{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-top: 1px solid var(--very-dark-blue-line);
+    padding: 4px 0px;
+    font-weight: 300;
+}
+
+.card__pfp{
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+/* Interactive stuffs */
+.card__author:hover, .card__name:hover{
+    cursor: pointer;
+    color: var(--cyan);
+}
+
+.card__img-overlay{
+    background-color: hsla(178, 100%, 50%, 0.5);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition-duration: 0.2s;
+}
+
+.card__image:hover{
+    cursor: pointer;
+}
+
+.card__image:hover + .card__img-overlay{
+    visibility: visible;
+    opacity: 1;
+    /* display: flex; */
+    pointer-events: none;
+}
