@@ -30,7 +30,8 @@ Users should be able to:
 
 - Know a bit more about `box-shadow` property.
 - How to stack elements on top of each other by Javascript
-- How to make hidden element show when the cursor interacts with another element.
+- How to make hidden element show when the cursor interacts with another element (`display`, `opacity`, `visibility`).
+- The `pointer-events` property
 
 ### Useful resources
 
